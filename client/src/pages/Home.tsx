@@ -312,7 +312,7 @@ export default function Home() {
       </section>
 
       <section className="workbench" aria-label="Atelier Stegano Web">
-        <aside className="side-rail"><div className="rail-line" /><div><span className="rail-kicker">PROTOCOLE</span><strong>LSB / 01</strong><p>Chaque canal RVB reçoit un bit du message. L’image est ensuite exportée en PNG pour préserver l’information.</p></div><div className="rail-bottom">LOCAL ONLY<br /><span>v1.0 — BROWSER</span></div></aside>
+        <aside className="side-rail"><div className="rail-line" /><div><span className="rail-kicker">PROTOCOLE</span><strong>LSB / 01</strong><p>Chaque canal RVB reçoit un bit du message. L’image est ensuite exportée en PNG pour préserver l’information.</p></div><div className="rail-bottom">LOCAL ONLY<br /><span>v1.0 — TP</span></div></aside>
         <div className="workspace">
           <div className="workspace-head"><div><p className="eyebrow"><span>02</span> ZONE DE TRAVAIL</p><h2>Porter ou inspecter<br /><em>une image.</em></h2></div><div className="mode-switch" role="tablist" aria-label="Mode de travail"><button className={mode === "encode" ? "active" : ""} onClick={() => setMode("encode")} role="tab" aria-selected={mode === "encode"}>INSCRIRE</button><button className={mode === "decode" ? "active" : ""} onClick={() => setMode("decode")} role="tab" aria-selected={mode === "decode"}>LIRE</button></div></div>
           <div className="workspace-grid">
