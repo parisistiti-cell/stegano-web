@@ -306,7 +306,7 @@ export default function Home() {
       <section className="hero" id="atelier">
         <div className="hero-copy">
           <p className="eyebrow"><span>01</span> ATELIER DE STÉGANOGRAPHIE</p>
-          <h1>Un message.<br /><em>Une image.</em><br />Aucun détour.</h1>
+          <h1>Un message.<br /><em>Une image.</em><br />Une Clé.</h1>
           <p className="hero-lede">Dissimulez un texte dans les pixels d’une image, directement dans votre navigateur. Vos fichiers restent sur votre appareil.</p>
           <div className="hero-notes"><span>PNG / JPG / BMP</span><span>LSB · UTF-8</span><span>100% LOCAL</span></div>
         </div>
