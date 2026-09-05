@@ -4,8 +4,8 @@ import { Check, Download, FileImage, LockKeyhole, Moon, ScanLine, Sun, Upload, W
 
 const MAGIC = new TextEncoder().encode("STEGANO1");
 const HEADER_BYTES = MAGIC.length + 4;
-const HERO_IMAGE = \;
-const MARK_IMAGE = "/manus-storage/stegano-mark_1a056427.png";
+const HERO_IMAGE = `${import.meta.env.BASE_URL}hero.png`;
+
 
 type Mode = "encode" | "decode";
 type Status = { tone: "idle" | "success" | "error"; text: string };
@@ -310,7 +310,7 @@ export default function Home() {
           <p className="hero-lede">Dissimulez un texte dans les pixels d’une image, directement dans votre navigateur. Vos fichiers restent sur votre appareil.</p>
           <div className="hero-notes"><span>PNG / JPG / BMP</span><span>LSB · UTF-8</span><span>100% LOCAL</span></div>
         </div>
-        <div className="hero-art"><img src="/hero.png" alt="Composition éditoriale autour d’une image et d’une grille de pixels" /><div className="art-label"></div></div>
+        <div className="hero-art"><img src={HERO_IMAGE} alt="Composition éditoriale autour d’une image et d’une grille de pixels" /><div className="art-label"></div></div>
       </section>
 
       <section className="workbench" aria-label="Atelier Stegano Web">
