@@ -4,7 +4,7 @@ import { Check, Download, FileImage, LockKeyhole, Moon, ScanLine, Sun, Upload, W
 
 const MAGIC = new TextEncoder().encode("STEGANO1");
 const HEADER_BYTES = MAGIC.length + 4;
-const HERO_IMAGE = "/hero.png";
+const HERO_IMAGE = \;
 const MARK_IMAGE = "/manus-storage/stegano-mark_1a056427.png";
 
 type Mode = "encode" | "decode";
