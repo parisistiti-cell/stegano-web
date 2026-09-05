@@ -4,7 +4,7 @@ import { Check, Download, FileImage, LockKeyhole, Moon, ScanLine, Sun, Upload, W
 
 const MAGIC = new TextEncoder().encode("STEGANO1");
 const HEADER_BYTES = MAGIC.length + 4;
-const HERO_IMAGE = "/manus-storage/stegano-hero_61b37b6e.png";
+const HERO_IMAGE = "/hero.png";
 const MARK_IMAGE = "/manus-storage/stegano-mark_1a056427.png";
 
 type Mode = "encode" | "decode";
@@ -311,7 +311,6 @@ export default function Home() {
           <div className="hero-notes"><span>PNG / JPG / BMP</span><span>LSB · UTF-8</span><span>100% LOCAL</span></div>
         </div>
         <div className="hero-art"><img src="/hero.png" alt="Composition éditoriale autour d’une image et d’une grille de pixels" /><div className="art-label"></div></div>
-       / <div className="hero-art"><img src={HERO_IMAGE} alt="Composition éditoriale autour d’une image et d’une grille de pixels" /><div className="art-label"></div></div>
       </section>
 
       <section className="workbench" aria-label="Atelier Stegano Web">
